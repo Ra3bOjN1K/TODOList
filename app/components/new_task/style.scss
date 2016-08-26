@@ -1,0 +1,25 @@
+.new-task-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  position: relative;
+
+  .new-task-input {
+    flex: 1 1;
+    border: 1px solid #aaa;
+    border-radius: 2px 0 0 2px;
+    border-right-width: 0;
+    color: #555;
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  .create-task-btn {
+    background: #68aa7f;
+    border: 1px solid darken(#68aa7f, 18%);
+    border-radius: 0 2px 2px 0;
+    font-size: 16px;
+    color: #fff;
+    width: 100px;
+  }
+}

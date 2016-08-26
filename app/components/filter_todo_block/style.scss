@@ -1,0 +1,90 @@
+.filter-todo-block {
+  background: #8da7c9;
+  border: 1px solid #777;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 8px;
+  margin-top: 24px;
+
+  .filters-todo {
+    border-right: 1px solid darken(#596c89, 8%);
+    border-radius: 0 3px 3px 0;
+    display: flex;
+    flex-direction: row;
+    color: #666;
+    font-size: 16px;
+    line-height: 1;
+
+    .filter-btn {
+      background: #596c89;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid darken(#596c89, 8%);
+      border-right-width: 0;
+      cursor: pointer;
+      height: 32px;
+      width: 50px;
+    }
+
+    .filter-btn:hover {
+      background: darken(#596c89, 1%);
+      border-color: darken(#596c89, 9%);
+    }
+
+    .filter-btn:first-child {
+      border-radius: 3px 0 0 3px;
+    }
+
+    .filter-btn:last-child {
+      border-radius: 0 3px 3px 0;
+    }
+
+    .filter-btn.checked {
+      background: darken(#596c89, 7%);
+      border-color: darken(#596c89, 12%);
+      color: #ddd;
+    }
+  }
+
+  .filter-todo-custom-search {
+    display: flex;
+    flex-direction: row;
+    height: 34px;
+    width: 280px;
+
+    input {
+      border: 1px solid #777;
+      border-right-width: 0;
+      border-radius: 3px 0 0 3px;
+      color: #666;
+      flex: 1 1;
+      font-size: 16px;
+      padding-left: 8px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #596c89;
+      border: 1px solid darken(#596c89, 6%);
+      border-radius: 0 3px 3px 0;
+      color: #eee;
+      cursor: pointer;
+      font-size: 18px;
+      width: 36px;
+    }
+
+    a:hover {
+      background: darken(#596c89, 2%);
+      border-color: darken(#596c89, 7%);
+    }
+  }
+}
